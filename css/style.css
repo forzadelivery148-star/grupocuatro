@@ -1,0 +1,264 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    color: #4a4848;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2e2b2b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #f4a261;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: #fffefe;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Menú */
+nav#menu {
+    background-color: #2a9d8f;
+    display: none; /* Para que se active con JS */
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav#menu ul {
+    list-style: none;
+}
+
+nav#menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav#menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton_menu {
+    background-color: #f4a261;
+    color: #1f1f1f;
+    border: none;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+/* Productos */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main b u {
+    color: #aa752a;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+main img {
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Línea separadora */
+hr {
+    border: none;
+    height: 4px;
+    background-color: #f4a261;
+    width: 50%;
+    margin: 20px auto;
+}
+
+
+menu ala izquierd/* Menú tipo sidebar más delgado */
+nav#menu {
+    background: linear-gradient(180deg, #2a9d8f, #264d73); /* Degradado azul elegante */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50px; /* Ancho más delgado */
+    display: none;
+    padding-top: 50px; /* Deja espacio para el header */
+    box-shadow: 3px 0 15px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateX(-100%);
+    opacity: 0;
+    border-right: 2px solid #f4a261;
+    border-radius: 0 10px 10px 0;
+    z-index: 1000;
+}
+
+/* Cuando se abra el menú */
+nav#menu.visible {
+    display: block;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Lista dentro del sidebar */
+nav#menu ul {
+    list-style: none;
+    padding-left: 5px; /* Ajuste para barra más delgada */
+    margin: 0;
+}
+
+nav#menu ul li {
+    margin: 5px 0;
+}
+
+nav#menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.85em; /* Un poco más pequeño para que quepa */
+    display: block;
+    padding: 6px 8px; /* Ajuste para barra delgada */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav#menu ul li a:hover {
+    background-color: #f4a261;
+    color: #1f1f1f;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Botón del menú */
+.boton_menu {
+    background-color: #f4a261;
+    color: #1f1f1f;
+    border: none;
+    font-size: 1.5em;
+    padding: 8px 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.boton_menu:hover {
+    background-color: #e59866;
+    transform: scale(1.05);
+}
+
+tabla
+/* === Estilos para el formulario de registro === */
+/* === Estilos para el formulario de registro === */
+.formulario-container {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+#registro-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(92, 88, 88, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#registro-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Campos generales */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Opciones de sexo centradas */
+.campo.sexo {
+    align-items: center;
+    text-align: center;
+}
+
+.opciones-sexo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.opciones-sexo label {
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Botón de envío */
+#registro-form button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #f4a261;
+    color: #2d2a2a;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#registro-form button:hover {
+    background-color: #e59866;
+}

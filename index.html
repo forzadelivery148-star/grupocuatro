@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       
+        
+          <img src="img/logo.jpeg" 
+     style="float: right; margin-right: 20px; width: 400px; height: 150px;" 
+     alt="logo de pagina">
+
+       
+        <b><center><h1>FORZA PAQUETERIA</h1></center></b>
+ <center><h2>ENTREGA RAPIDA Y CONFIABLE</h2></center>
+    </header>
+    
+   
+
+       </header>
+       <Script src="main.js"></Script>
+       <main>
+        <p>
+            <b><u><h3 style="text-align: left;">SOMOS UNA EMPRESA QUE SE DEDICA</h3></u></b>
+ <center>
+                <img src="img/casual m.jpeg" style="float: right;" width="250" height="200" alt="">
+                <p>
+                    Forza se centra en ofrecer entregas rápidas, seguras y con cobertura nacional, 
+                    apoyándose en tecnología para rastreo en tiempo real y una red de más de 30 agencias en todo el país.
+                     Es una de las empresas logísticas más relevantes, con servicios de última milla y soluciones integrales
+                      para particulares y empresas.
+                    nosostros nos encergamos de llevar desde documentos y paquetes pequeños hasta mercancía más grande,
+                     con un enfoque en seguridad, rapidez y cobertura nacional.
+                    </p>
+                
+            </center><br>
+
+
+            <b><u><h3 style="text-align: left;">Puedes realizar tu envio Ya,
+                 registrandote aqui abajito.</h3></u></b>
+             <p style="text-align: left;">
+               Que estas esperando para ser parte de esta gran familia!!</p>
+        </p>
+        <Script src="main.js"></Script>
+<main>
+  <form id="registro-form">
+    <h2>Formulario de Registro</h2>
+
+    <div>
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre completo" required />
+    </div>
+
+    <div>
+      <label>Edad:</label>
+      <input type="text" name="edad" required />
+    </div>
+
+    <div>
+      <label>Correo electrónico:</label>
+      <input type="email" name="correo electronico" required />
+    </div>
+
+    <div>
+      <label>Dirección:</label>
+      <input type="text" name="direccion" required />
+    </div>
+
+    <div>
+      <label>Número de teléfono:</label>
+      <input type="text" name="numero" required />
+    </div>
+
+    <div>
+      <label>Carnet:</label>
+      <input type="text" name="carnet" required />
+    </div>
+
+    <div>
+      <label>Método de pago:</label><br>
+      <input type="radio" name="pago" value="contra entrega" /> Contra entrega
+      <input type="radio" name="pago" value="pago en linea" /> Pago en línea
+    </div>
+
+    <div>
+      <label>Tipo de paquete:</label>
+      <textarea name="tipo de paquete" rows="4"></textarea>
+    </div>
+
+    <button type="submit">Enviar Registro</button>
+  </form>
+</main>
+
+  <!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("WAUwj9Z9N24-nE529"); // Tu clave pública
+
+    const form = document.getElementById("registro-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_ty8ooaq", "template_fhvbkv3", form)
+        .then(function () {
+          alert("¡Registro enviado con éxito!");
+          form.reset();
+        })
+        .catch(function (error) {
+          alert("Error al enviar el registro: " + error.text);
+        });
+    });
+  });
+</script>
+       </main>
+       <footer style="background-color: #2e2b2b; color: white; text-align: center; padding: 20px; margin-top: 20px;">
+        <p><i>Somos tu mejor opcion,te lo garantizamos</i></p>
+        <p>creado por: <b>Estudiantes Regios</b></p>
+        <p>forzadelivery148@gmail.com</p>
+       </footer>
+</body>
+</html>
